@@ -1,6 +1,6 @@
 Reporter::Application.routes.draw do
   root :to => "home#index"
-  resources :reports, :only => [:new, :create, :show, :index]
+  resources :reports, :only => [:new, :create, :edit,:show, :index] #Include :edit to allow editing
 
   match "/new", :to => "reports#new"
   match "/view", :to => "reports#show"
