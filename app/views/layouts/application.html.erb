@@ -1,31 +1,33 @@
 <html>
-	<head>
+	<head> 	<!-- Overhead -->
 		<title>BusinessBorders</title>
-		<%= stylesheet_link_tag "application" %>
+		<%= stylesheet_link_tag "application" %> <!-- The application.css -->
 
 		<!-- Twitter follow button -->
 		<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 		
-<style type="text/css">
-  #map_canvas { height: 100%; width:100%; }
-</style>
-<script type="text/javascript"
-    src="http://maps.googleapis.com/maps/api/js?sensor=true">
-</script>
-<script type="text/javascript">
-  function initialize() {
-    var latlng = new google.maps.LatLng(20.0, 0.0);
-    var myOptions = {
-      zoom: 2,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
-        myOptions);
-  }
-</script>
+		<style type="text/css">
+			#map_canvas { height: 100%; width:100%; }
+		</style>
 
+		<script type="text/javascript"
+			src="http://maps.googleapis.com/maps/api/js?sensor=true">
+		</script>
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(20.0, 0.0);
+				var myOptions = {
+				  zoom: 2,
+				  center: latlng,
+				  mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"),
+				    myOptions);
+			}
+		</script>
 	</head>
+
+	<!-- Main body -->
 	<body onload="initialize()">
 		<div id="header">
 			<div id="title">
@@ -39,8 +41,7 @@
 		</div>
 		<div id="footer">
 			<div id="donate">
-				<div class="button">Donate</div>
-				<div class="text">Help us improve and maintain BusinessBorders</div>
+				Help us improve and maintain BusinessBorders <div class="button">Donate</div>
 			</div>
 			<div id="twitter-buttons">
 				<a href="https://twitter.com/businessborders" class="twitter-follow-button">Follow @businessborders</a>

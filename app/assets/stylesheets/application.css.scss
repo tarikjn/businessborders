@@ -43,6 +43,19 @@ h1,h2,h3
 		@include rounded;
 	}
 }
-#container {
-	
-}
+#container {}
+
+#footer {	
+		padding: 10px;
+		background: $light-gray;
+		@include rounded;
+		margin-right: 10px;
+		text-align:center}
+
+#donate {margin-left: auto; margin-right: auto; width: 50%}
+.button {color:blue}
+
+.foot-section {text-align:center}
+#twitter-buttons {margin-left: auto; margin-right: auto; width: 50%}
+
+

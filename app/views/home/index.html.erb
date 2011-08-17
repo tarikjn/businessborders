@@ -1,12 +1,12 @@
 <div class="home-header">
 	<div class="separator"><div class="intro">
 		<h3>What is it?</h3>
-		<p>BusinessBorders is a website taking reports to track arbitrary immigration decisions, unjust treatments and abuses specifically affecting people traveling for business purposes and the businesses they represent. We take reports from all countries. Our goal is to publish regular statistics to expose business unfriendly borders and inequal processes, to help policy makers and entrepreneurs.</p>
+		<p>BusinessBorders is a website taking reports to track arbitrary immigration decisions, unjust treatments and abuses specifically affecting people traveling for business purposes and the businesses they represent. We take reports from all countries and can ensure anonymity. Our goal is to publish regular statistics to expose unfriendly borders and discriminatory processes to help policy-makers and entrepreneurs.</p>
 	</div></div>
 	<div class="separator"><div class="submit">
-		Victim: report arbitrary decision or inequal treatment
-		Whistleblower: report abuse
-		Submit a new report
+		Victims: Report arbitrary decision or unequal treatment, anonymously.<br/>
+		Whistleblowers: Report abuses, anonymously.<br/>
+		<%= link_to("Submit a new report", new_path) %>
 	</div></div>
 </div>
 <div class="latest-reports">
@@ -16,7 +16,7 @@
 			<ul>
 			</ul>
 			<div class="foot-section">
-				<%= link_to "View more", reports_path %>
+				<%= link_to "View more reports", view_path %>
 			</div>
 		</div>
 		<div class="map">
