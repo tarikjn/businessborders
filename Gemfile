@@ -1,19 +1,26 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc6'
-
+#gem 'pg'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'rake', '0.8.7'
+
+
+gem 'pg'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+
+
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0.rc"
   gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'uglifier'
+  
 end
 
 gem 'jquery-rails'
@@ -27,7 +34,12 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
+group :test  do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'sqlite3'
 end
+
+group :development do
+  gem 'sqlite3'
+endgit
