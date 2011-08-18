@@ -1,20 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc6'
-#gem 'pg'
+gem 'pg'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-#gem 'rake', '0.8.7'
-
-
-gem 'pg'
-
-
 # Gems used only for assets and not required
 # in production environments by default.
-
-
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0.rc"
