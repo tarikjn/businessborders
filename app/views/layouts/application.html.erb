@@ -1,14 +1,16 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Reporter</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+ <head>
+   <title>BusinessBorders</title>
+   <%= stylesheet_link_tag "application" %>
+ </head>
+ <body>
+   <div id="header">
+    <h2 id="logo">BusinessBorders</h2>
+    <ul class="nav">
+      <li id="home"><a href="#">Submit a Report</a></li>
+      <li id="index"><a href="#">View Reports</a></li>
+    </ul>
+   </div>
+   <%= yield %>
+  </body>
 </html>

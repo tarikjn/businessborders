@@ -1,0 +1,55 @@
+<div class="form">
+	<%= form_for(@report) do |f| %>
+	  <% if @report.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+	      <ul>
+	      <% @report.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+    <div class="section" id="section_one">
+      <h2 class="section_header">About You</h2>
+	  <div class="field" id="nationality">
+	    <%= f.label :nationality %><br />
+	    <%= f.text_field :nationality %>
+	  </div>
+	  <div class="field" id="age">
+	    <%= f.label :age %><br />
+	    <%= f.text_field :age %>
+	  </div>
+	  <div class="field" id="gender">
+	    <%= f.label :gender %><br />
+	    <%= f.text_field :gender %>
+	  </div>
+	</div>
+	<div class="section" id="section_two">
+	  <h2 class="section_header">What happened?</h2>
+	  <div class="field" id="department">
+	    <%= f.label "Department" %><br />
+	    <%= f.text_field :department %>
+	  </div>
+	  <div class="field" id="location">
+	    <%= f.label "Location" %><br />
+	    <%= f.text_field :location %> 
+	  </div>
+	  <div class="field" id="outcome">
+	    <%= f.label :outcome %><br />
+	    <%= f.text_field :outcome %>
+	  </div>
+    </div>
+
+	  <div class="field" id="deposition">
+	    <%= f.label :deposition %><br />
+	    <%= f.text_area :deposition %>
+	  </div>
+
+
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+</div>

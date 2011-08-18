@@ -1,0 +1,51 @@
+// Place all the styles related to the Reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.form
+{
+  text-align: center;
+}
+.field label
+{
+   margin: 0 auto;
+   padding: 0;
+}
+.section
+{
+  margin: 0 auto;
+  padding: 15px;
+  width: 50%;
+  border: 2px solid #AAB0BF;
+  h2
+  {
+  	margin: 0 auto;
+  	padding: 0;
+  }
+  .field
+  {
+    padding: 15px;
+  	display: inline-block;
+  }
+}
+#section_one
+{
+  margin-top: 60px;
+  border-bottom: 0px solid transparent;
+}
+#section_two
+{
+  border-top: 0px solid transparent;
+}
+label
+{
+	font-family: "Georgia";
+}
+#report_deposition
+{
+	width: 45%;
+}
+h2
+{
+  margin: 0 auto;
+  padding: 0;
+}
