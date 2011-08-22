@@ -24,6 +24,7 @@ h1,h2,h3
   padding: 0;
   background: #71757F;
 }
+#logo a{ text-decoration:none; color:#000;}
 #container{
 	margin:0 auto;
 	width:960px;
@@ -56,4 +57,3 @@ h1,h2,h3
 {
   color: #E3EBFF;
 }
-

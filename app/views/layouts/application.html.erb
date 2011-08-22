@@ -2,18 +2,39 @@
  <head>
    <title>BusinessBorders</title>
    <%= stylesheet_link_tag "application" %>
+<style type="text/css">
+  #map_canvas { height: 100%; width:100%; }
+</style>
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?sensor=true">
+</script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(20.0, 0.0);
+    var myOptions = {
+      zoom: 2,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+  }
+</script>
+
  </head>
- <body>
+ <body onload="initialize()">
    <div id="header">
-    <h2 id="logo">BusinessBorders</h2>
+    <h2 id="logo"><%= link_to "BusinessBorders", root_path %></h2>
     <ul class="nav">
       <li id="home"><%= link_to "Submit a Report", new_report_path %></li>
       <li id="index"><%= link_to "View Reports", root_path %></li>
     </ul>
    </div>
 	<div id="container">
-		   <%= yield %>
+	   <%= yield %>
+
 	</div>
+
 
   </body>
 </html>
