@@ -1,4 +1,7 @@
 Reporter::Application.routes.draw do
+
+root :to => "reports#index"
+resources :reports
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

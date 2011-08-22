@@ -7,10 +7,13 @@
    <div id="header">
     <h2 id="logo">BusinessBorders</h2>
     <ul class="nav">
-      <li id="home"><a href="#">Submit a Report</a></li>
-      <li id="index"><a href="#">View Reports</a></li>
+      <li id="home"><%= link_to "Submit a Report", new_report_path %></li>
+      <li id="index"><%= link_to "View Reports", root_path %></li>
     </ul>
    </div>
-   <%= yield %>
+	<div id="container">
+		   <%= yield %>
+	</div>
+
   </body>
 </html>

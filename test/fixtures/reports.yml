@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  nationality: MyString
+  religion: MyString
+  age: 1
+  gender: MyString
+  agency: MyString
+  location: MyString
+  disposition: MyText
+  outcome: MyText
+  client_ip: MyString
+
+two:
+  title: MyString
+  nationality: MyString
+  religion: MyString
+  age: 1
+  gender: MyString
+  agency: MyString
+  location: MyString
+  disposition: MyText
+  outcome: MyText
+  client_ip: MyString

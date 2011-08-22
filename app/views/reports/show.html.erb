@@ -1,48 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Department:</b>
-  <%= @report.department %>
-</p>
 
-<p>
-  <b>Disposition:</b>
-  <%= @report.disposition %>
-</p>
 
-<p>
-  <b>Outcome:</b>
-  <%= @report.outcome %>
-</p>
+<p><b>Nationality: </b><%= @report.nationality %></p>
+<p><b>Religion: </b><%= @report.religion %></p>
+<p><b>Gender: </b><%= @report.gender %></p>
+<p><b>Age: </b><%= @report.age %></p>
 
-<p>
-  <b>Deposition:</b>
-  <%= @report.deposition %>
-</p>
+<p><b>Department: </b><%= @report.agency %></p>
+<p><b>Location: </b><%= @report.location %></p>
 
-<p>
-  <b>Gender:</b>
-  <%= @report.gender %>
-</p>
-
-<p>
-  <b>Nationality:</b>
-  <%= @report.nationality %>
-</p>
-
-<p>
-  <b>Age:</b>
-  <%= @report.age %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @report.location %>
-</p>
+<p><b>Disposition: </b><%= @report.disposition %></p>
+<p><b>Outcome: </b><%= @report.outcome %></p>
 
 <p>
   <b>Client ip:</b>
-  <%= @report.client_ip %>
+  <% if @report.client_ip.nil? %>
+    <%= "Not Recorded" %>
+  <% else %>
+    <%= @report.client_ip %>
+  <% end %>
 </p>
 
 

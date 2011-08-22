@@ -13,40 +13,47 @@
 	  <% end %>
     <div class="section" id="section_one">
       <h2 class="section_header">About You</h2>
+	  
+	 
 	  <div class="field" id="nationality">
 	    <%= f.label :nationality %><br />
 	    <%= f.text_field :nationality %>
 	  </div>
+	  <div class="field" id="religion">
+	    <%= f.label :religion %><br />
+	    <%= f.text_field :religion %>
+	  </div>
 	  <div class="field" id="age">
 	    <%= f.label :age %><br />
-	    <%= f.text_field :age %>
+	    <%= f.text_field :age, :size => "4"%>
 	  </div>
 	  <div class="field" id="gender">
 	    <%= f.label :gender %><br />
-	    <%= f.text_field :gender %>
+	    <%= f.select :gender, options_for_select([["Select", ""],["Male", "Male"],["Female","Female"]]) %>
 	  </div>
 	</div>
 	<div class="section" id="section_two">
-	  <h2 class="section_header">What happened?</h2>
+	  <h2 class="section_header">Where it happened?</h2>
 	  <div class="field" id="department">
-	    <%= f.label "Department" %><br />
-	    <%= f.text_field :department %>
+	    <%= f.label :agency, "Department" %><br />
+	    <%= f.text_field :agency %>
 	  </div>
 	  <div class="field" id="location">
 	    <%= f.label "Location" %><br />
 	    <%= f.text_field :location %> 
 	  </div>
+	</div>
+	<div  id="section_three">
+	 <h2 class="section_header">What happened?</h2>
+	  <div class="field" id="disposition">
+	    <%= f.label :disposition %><br />
+	    <%= f.text_area :disposition %>
+	  </div>
 	  <div class="field" id="outcome">
 	    <%= f.label :outcome %><br />
-	    <%= f.text_field :outcome %>
+	    <%= f.text_area :outcome %>
 	  </div>
     </div>
-
-	  <div class="field" id="deposition">
-	    <%= f.label :deposition %><br />
-	    <%= f.text_area :deposition %>
-	  </div>
-
 
 	  <div class="actions">
 	    <%= f.submit %>

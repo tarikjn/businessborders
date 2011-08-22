@@ -24,6 +24,10 @@ h1,h2,h3
   padding: 0;
   background: #71757F;
 }
+#container{
+	margin:0 auto;
+	width:960px;
+}
 .nav
 {
   margin: 0 auto;
@@ -52,3 +56,4 @@ h1,h2,h3
 {
   color: #E3EBFF;
 }
+
