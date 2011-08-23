@@ -1,0 +1,11 @@
+$box-gray: rgba(100, 100, 100, .25);
+$light-gray: rgba(100, 100, 100, .10);
+
+@mixin rounded($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+@mixin clear-after {
+	&:after { content: ""; display: block; height: 0; clear: both; }
+}

@@ -1,0 +1,48 @@
+// Google web
+@import url(http://fonts.googleapis.com/css?family=Actor|Hammersmith+One);
+/* usage:
+ * font-family: 'Actor', sans-serif;
+ * font-family: 'Hammersmith One', sans-serif;
+ */
+
+@import "global";
+
+body
+{
+	background: white;
+	width: 900px;
+	padding-top: 25px;
+	margin: 0 auto;
+	font-family: 'Actor', sans-serif;
+}
+
+h1,h2,h3
+{
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: normal;
+}
+#header
+{
+	position: relative;
+	padding-bottom: 30px;
+	
+	#title {
+		.logo {
+			a { text-decoration:none; color: black;}
+			margin: 0;
+			//padding-bottom: 0;
+		}
+	}
+	
+	#language {
+		position: absolute;
+		top: 0; right: 0;
+		
+		padding: 10px;
+		background: $box-gray;
+		@include rounded;
+	}
+}
+#container {
+	
+}

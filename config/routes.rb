@@ -1,7 +1,8 @@
 Reporter::Application.routes.draw do
 
-root :to => "reports#index"
-resources :reports
+  root :to => "home#index"
+  resources :reports, :only => [:new, :create, :show, :index]
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

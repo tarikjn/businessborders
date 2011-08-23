@@ -1,0 +1,30 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "global";
+
+.home-header {
+	@include clear-after;
+	
+	> div {
+		width: 50%; float: left;
+		
+		
+	}
+	
+	.intro {
+		padding: 10px;
+		background: $light-gray;
+		@include rounded;
+		margin-right: 10px;
+		
+		h3 {
+			margin: 0;
+		}
+	}
+	
+	.submit {
+		margin-left: 10px;
+	}
+}
